@@ -31,5 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('p-fecha').value = new Date().toISOString().split('T')[0];
   document.getElementById('f-fecha').value = new Date().toISOString().split('T')[0];
   populateMotoSelect();
-  render();
+  loadBookings(); // carga datos reales de Supabase
 });
